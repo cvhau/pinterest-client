@@ -1,9 +1,9 @@
-##pinterest-client
+## pinterest-client
 A simple python client for Pinterest that support user interact with Pinterest such as simple browser.
 
 Support operations: login, pin, save pin, delete pin, boards, create board, delete board, follow board, follow user, comment, search pins, search users, search boards.
 
-##Installation
+## Installation
 [This package is in pypi](https://pypi.python.org/pypi/pinterest-client) so you can install it easily using pip command:
 ```sh
 pip install pinterest-client
@@ -13,7 +13,7 @@ or install from source code if you downloaded it from [this GitHub repository](h
 python setup.py install
 ```
 
-##Dependencies
+## Dependencies
 This package depends on some other Python packages:
 
 - [requests](http://docs.python-requests.org)
@@ -21,7 +21,7 @@ This package depends on some other Python packages:
 
 They are included in the requirements of this package so you won't have to manually install them.
 
-##Usage
+## Usage
 After installation was successful, you can initialize a new pinterest object: 
 ```python
 from pinterest import Pinterest
@@ -29,7 +29,7 @@ from pinterest import Pinterest
 pinterest = Pinterest(username_or_email='your_username_or_email', password='your_password')
 ```
 
-#####With proxies
+#### With proxies
 If you need to use a proxy, you can pass <i>proxies</i> argument to constructor
 ```python
 from pinterest import Pinterest
@@ -45,7 +45,7 @@ pinterest = Pinterest(
     proxies=proxies)
 ```
 
-#####Custom User-Agent
+#### Custom User-Agent
 You can also use your custom User-Agent string for each pinterest-client object 
 ```python
 from pinterest import Pinterest
@@ -58,7 +58,7 @@ pinterest = Pinterest(
     agent_string=agent_string)
 ```
 
-#####Operations
+#### Operations
 ```python
 from pinterest import Pinterest
 
